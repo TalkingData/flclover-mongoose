@@ -1,0 +1,38 @@
+{
+  "name": "flclover-mongoose",
+  "version": "0.2.0",
+  "description": "flclover-mongoose",
+  "keywords": [
+    "flclover",
+    "koa2",
+    "mongoose",
+    "mongodb"
+  ],
+  "dependencies": {
+    "assert": "^1.4.1",
+    "debug": "^2.6.8",
+    "mongoose": "^4.11.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "conventional-changelog-cli": "^1.3.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "intelli-espower-loader": "^1.0.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.3.0",
+    "power-assert": "^1.4.2",
+    "supertest": "^3.0.0"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/talkingdata/flclover-mongoose",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TalkingData/flclover-mongoose.git"
+  },
+  "license": "MIT"
+}
