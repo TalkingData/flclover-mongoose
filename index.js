@@ -1,9 +1,7 @@
-const loadFile = require('./loadfile');
+const mongo = require('./mongo');
 module.exports = (options) => {
   return function mongoose(ctx, next) {
-    if (ctx.app.mongoLoaded) return next();
-    const mongo = loadFile('./mongo');
-    ctx.app.mongoLoaded = true;
+    if (ctx.app.context.model) return next();
     mongo(ctx, options);
     return next();
   };

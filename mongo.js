@@ -37,7 +37,7 @@ const loadModel = (ctx, db) => {
   fs.readdirSync(dir).forEach((file) => {
     model[file.slice(0, -3)] = createModel(dir, file, db);
   });
-  ctx.model = model;
+  ctx.app.context.model = model;
 };
 
 module.exports = (ctx, config) => {
@@ -50,8 +50,6 @@ module.exports = (ctx, config) => {
   const db = mongoose.createConnection(config.url, config.options);
   db.Schema = mongoose.Schema;
   ctx.mongoose = db;
-
-  ctx.aaa = 1;
 
   // const heartEvent = new EventEmitter();
   // heartEvent.await = awaitEvent;
