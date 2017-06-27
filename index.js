@@ -1,4 +1,4 @@
-const loadFile = require('./loadfile.js');
+const loadFile = require('./loadfile');
 module.exports = (options) => {
   return function mongoose(ctx, next) {
     if (ctx.app.mongoLoaded) return next();
